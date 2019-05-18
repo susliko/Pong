@@ -1,4 +1,4 @@
-# Multiplayer Pong-game in Scala
+# Multiplayer Pong-game in terminal
 
 <p align="center">
   <img src="images/intro.png"/>
