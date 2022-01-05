@@ -2,16 +2,17 @@ name := "Pong"
 
 version := "0.1"
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.7"
 
-val monocleVersion = "1.6.0-M4"
+scalacOptions in Global += "-Ymacro-annotations"
+
 libraryDependencies ++= Seq(
-  "io.monix" %% "monix" % "3.0.0-RC2",
-  "org.typelevel" %% "cats-core" % "1.6.0",
-  "org.typelevel" %% "cats-effect" % "1.2.0",
-  "co.fs2" %% "fs2-core" % "1.0.4",
-  "co.fs2" %% "fs2-io" % "1.0.4",
-  "com.beachape" %% "enumeratum" % "1.5.13",
-  "com.github.julien-truffaut" %%  "monocle-core" % monocleVersion,
-  "com.github.julien-truffaut" %%  "monocle-macro" % monocleVersion,
+  "io.monix" %% "monix" % "3.4.0",
+  "org.typelevel" %% "cats-core" % "2.7.0",
+  "org.typelevel" %% "cats-effect" % "2.5.1",
+  "co.fs2" %% "fs2-core" % "2.5.4",
+  "co.fs2" %% "fs2-io" % "2.5.4",
+  "com.beachape" %% "enumeratum" % "1.7.0",
+  "dev.optics" %% "monocle-core" % "3.1.0",
+  "dev.optics" %% "monocle-macro" % "3.1.0"
 )

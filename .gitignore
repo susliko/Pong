@@ -2,4 +2,6 @@
 .git/
 target/
 project/
-
+.bloop/
+.metals/
+.bsp/

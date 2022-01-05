@@ -49,7 +49,7 @@ case class ConsoleManager(queue: Queue[IO, Key])(
   /**
     * Clears console screen
     */
-  def clearOutput: IO[Unit] = output("\033[H\033[2J")
+  def clearOutput: IO[Unit] = output("\u001b[H\u001b[2J")
 
   /**
     * Prints to the screen
